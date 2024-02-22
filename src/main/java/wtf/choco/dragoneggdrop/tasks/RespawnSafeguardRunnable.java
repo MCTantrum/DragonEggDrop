@@ -1,3 +1,4 @@
+/*
 package wtf.choco.dragoneggdrop.tasks;
 
 import com.google.common.base.Preconditions;
@@ -15,11 +16,13 @@ import org.jetbrains.annotations.NotNull;
 import wtf.choco.dragoneggdrop.DragonEggDrop;
 import wtf.choco.dragoneggdrop.world.EndWorldWrapper;
 
+*/
 /**
  * Represents a BukkitRunnable that ensures the respawn state of the Ender Dragon due to
  * issues in vanilla dragon respawning mechanics. If a dragon has not respawned within 40
  * seconds (800 ticks), the respawning process will restart.
- */
+ *//*
+
 final class RespawnSafeguardRunnable extends BukkitRunnable {
 
     // Respawn takes about 30 seconds. Timeout at 35 seconds
@@ -60,7 +63,8 @@ final class RespawnSafeguardRunnable extends BukkitRunnable {
         });
     }
 
-    /**
+    */
+/**
      * Commence a new RespawnSafeguardRunnable. This should only be invoked in a
      * RespawnRunnable.
      *
@@ -69,7 +73,8 @@ final class RespawnSafeguardRunnable extends BukkitRunnable {
      * @param battle the battle to check
      *
      * @return the running RespawnSafeguardRunnable instance
-     */
+     *//*
+
     @NotNull
     protected static RespawnSafeguardRunnable newTimeout(@NotNull DragonEggDrop plugin, @NotNull World world, @NotNull DragonBattle battle) {
         Preconditions.checkArgument(plugin != null, "plugin must not be null");
@@ -80,3 +85,4 @@ final class RespawnSafeguardRunnable extends BukkitRunnable {
     }
 
 }
+*/
